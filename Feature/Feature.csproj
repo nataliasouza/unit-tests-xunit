@@ -1,4 +1,4 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+<Project Sdk="Microsoft.NET.Sdk">
 
 	<PropertyGroup>
 		<TargetFramework>net5.0</TargetFramework>
@@ -7,6 +7,11 @@
 	<ItemGroup>
 		<PackageReference Include="fluentvalidation" Version="8.4.0" />
 		<PackageReference Include="mediatr" Version="7.0.0" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <ProjectReference Include="..\Demo.Tests\Demo.Tests.csproj" />
+	  <ProjectReference Include="..\Demo\Demo.csproj" />
 	</ItemGroup>
 
 </Project>
