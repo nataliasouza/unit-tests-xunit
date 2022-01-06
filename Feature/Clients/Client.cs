@@ -15,12 +15,12 @@ namespace Feature.Clients
 
         protected Client() { }
 
-        public Client(Guid id, string name, DateTime birthday,
+        public Client(Guid id, string name, string surname, DateTime birthday,
             string email, bool active, DateTime registrationDate)
         {
             Id = id;
             Name = name;
-            Surname = Surname;
+            Surname = surname;
             Birthday = birthday;
             RegistrationDate = registrationDate;
             Email = email;
