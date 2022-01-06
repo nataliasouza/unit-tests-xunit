@@ -1,12 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Feature.Core;
 
 namespace Feature.Clients
 {
-    public class IClientRepository
+    public interface IClientRepository : IRepository<Client>
     {
+        Client GetByEmail(string email);
     }
 }
