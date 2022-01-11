@@ -18,10 +18,10 @@ namespace Demo.Tests
         public void Employee_Surname_NotHaveSurname()
         {
             //Arrange and Act
-            var employee = new Employee(name: "Natalia", salary: 4000);
+            var employee = new Employee(name:"Natalia", salary: 4000);
 
             //Assert
-            Assert.Null(employee.Name);
+            Assert.Null(employee.Surname);
 
             //Assert boll
             Assert.True(string.IsNullOrEmpty(employee.Surname));

@@ -10,7 +10,7 @@ namespace Demo.Tests
     public class AssertRangesTests
     {
         [Theory]
-        [InlineData(700)]
+        [InlineData(1000)]
         [InlineData(1500)]
         [InlineData(2000)]
         [InlineData(7500)]
@@ -25,7 +25,7 @@ namespace Demo.Tests
             //Assert
 
             if (employee.ProfessionalLevel == Enums.ProfessionalLevel.Estagiario)
-                Assert.InRange(actual: employee.Salary, low: 1000, high: 2000);
+                Assert.InRange(actual: employee.Salary, low: 900, high: 2000);
             
             if (employee.ProfessionalLevel == Enums.ProfessionalLevel.Junior)
                 Assert.InRange(actual: employee.Salary, low: 2200, high: 5000);
