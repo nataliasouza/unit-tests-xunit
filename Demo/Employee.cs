@@ -23,9 +23,9 @@ namespace Demo
 
             Salary = salary;
             if (salary <= 2000) ProfessionalLevel = ProfessionalLevel.Estagiario;
-            else if (salary > 2000 && salary <= 5000) ProfessionalLevel = ProfessionalLevel.Junior;
-            else if (salary > 5000 && salary <= 8000) ProfessionalLevel = ProfessionalLevel.Pleno;
-            else if (salary >= 8000) ProfessionalLevel = ProfessionalLevel.Senior;
+            else if (salary > 2200 && salary <= 5000) ProfessionalLevel = ProfessionalLevel.Junior;
+            else if (salary > 5200 && salary <= 8000) ProfessionalLevel = ProfessionalLevel.Pleno;
+            else if (salary >= 8200) ProfessionalLevel = ProfessionalLevel.Senior;
         }
 
         private void SetSkills()
