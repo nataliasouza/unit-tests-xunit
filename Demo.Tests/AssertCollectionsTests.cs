@@ -21,7 +21,7 @@ namespace Demo.Tests
             var employee = EmployeeFactory.Creat(name: "Natt", salary: 4000);
 
             //Assert
-            Assert.Contains(expected: "OOP", employee.Skills);
+            Assert.Contains(expected: "C# Completo", employee.Skills);
         }
 
         [Fact]
@@ -43,11 +43,18 @@ namespace Demo.Tests
             var skillsBasics = new[]
             {
                 "Lógica de Programação",
-                "OOP",
-                "Testes",
-                "Microservices"
+                "C# Completo",
+                "Programação Orientada a Objetos",
+                "Asp.Net Core",
+                "SQL e NoSQL",
+                "GIT",
+                "Testes Unitários",
+                "Testes Integrados",
+                "Testes Automatizados",
+                "Microsservices",
+                "AWS"
             };
-
+    
             //Assert
             Assert.Equal(expected: skillsBasics, actual: employee.Skills);
         }
