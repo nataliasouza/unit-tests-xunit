@@ -32,31 +32,30 @@ namespace Demo
         {
             var skillsBasics = new List<string>()
             {
-                "Lógica de Programação",
-                "Programação Orientada a Objetos"
+                "Lógica de Programação",               
             };
 
             Skills = skillsBasics;
 
             switch (ProfessionalLevel)
             {
-                case ProfessionalLevel.Estagiario:
-                    Skills.Add("Lógica de Programação");
+                case ProfessionalLevel.Estagiario:                    
                     Skills.Add("Básico C#");
+                    Skills.Add("Programação Orientada a Objetos");
                     break;
 
-                case ProfessionalLevel.Junior:
-                    Skills.Add("Lógica de Programação");
+                case ProfessionalLevel.Junior:                    
                     Skills.Add("C# Completo");
+                    Skills.Add("Programação Orientada a Objetos");
                     Skills.Add("Asp.Net Core");
                     Skills.Add("SQL e NoSQL");
                     Skills.Add("GIT");
                     Skills.Add("Testes Unitários");
                     break;
 
-                case ProfessionalLevel.Pleno:
-                    Skills.Add("Lógica de Programação");
+                case ProfessionalLevel.Pleno:                    
                     Skills.Add("C# Completo");
+                    Skills.Add("Programação Orientada a Objetos");
                     Skills.Add("Asp.Net Core");
                     Skills.Add("SQL e NoSQL");
                     Skills.Add("GIT");
@@ -65,9 +64,9 @@ namespace Demo
                     Skills.Add("Microsservices");
                     break;
 
-                case ProfessionalLevel.Senior:
-                    Skills.Add("Lógica de Programação");
+                case ProfessionalLevel.Senior:                    
                     Skills.Add("C# Completo");
+                    Skills.Add("Programação Orientada a Objetos");
                     Skills.Add("Asp.Net Core");
                     Skills.Add("SQL e NoSQL");
                     Skills.Add("GIT");
