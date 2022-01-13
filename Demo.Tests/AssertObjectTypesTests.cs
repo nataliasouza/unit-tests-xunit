@@ -1,16 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Xunit;
+﻿using Xunit;
 
 namespace Demo.Tests
 {
     public class AssertObjectTypesTests
-    {
-        public object FuncionarioFactory { get; private set; }
-
+    {        
         [Fact]
         public void EmployeeFactory_Creat_MustReturnType_Employee()
         {
