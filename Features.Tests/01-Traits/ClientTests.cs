@@ -6,7 +6,8 @@ namespace Features.Tests._01_Traits
 {
     public class ClientTests
     {
-        [Fact]
+        [Fact(DisplayName ="New Client Valid")]
+        [Trait("Category", "Client Trait Tests")]
         public void Client_NewClient_MustBeValid()
         {
             //Arrange
@@ -27,7 +28,8 @@ namespace Features.Tests._01_Traits
             Assert.Equal(expected: 0, actual: cliente.ValidationResult.Errors.Count);
         }
 
-        [Fact]
+        [Fact(DisplayName ="Client Test Invalid")]
+        [Trait("Category","Client Trait Tests")]
         public void Client_NewClient_MustBeNotValid()
         {
             //Arrange
