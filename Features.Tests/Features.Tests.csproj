@@ -20,10 +20,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="02-Fixtures\" />
-  </ItemGroup>
-
-  <ItemGroup>
     <ProjectReference Include="..\Feature\Feature.csproj" />
   </ItemGroup>
 

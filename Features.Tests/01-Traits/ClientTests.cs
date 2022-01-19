@@ -1,24 +1,26 @@
 ﻿using Feature.Clients;
+using Features.Tests._02_Fixtures;
 using System;
 using Xunit;
 
 namespace Features.Tests._01_Traits
 {
+    [Collection(nameof(ClientCollection))]
     public class ClientTests
     {
+        private readonly ClientFixtureTests _clientTestsFixture;
+
+        public ClientTests(ClientFixtureTests clientFixtureTests)
+        {
+            _clientTestsFixture = clientFixtureTests;                
+        }
+
         [Fact(DisplayName ="New Client Valid")]
         [Trait("Category", "Client Trait Tests")]
         public void Client_NewClient_MustBeValid()
         {
             //Arrange
-            var cliente = new Client(
-                Guid.NewGuid(),
-                name: "Natt",
-                surname: "Souza",
-                birthday: DateTime.Now.AddYears(-37),
-                email: "natt@nso.com.br",
-                active: true,
-                registrationDate: DateTime.Now);
+            var cliente = _clientTestsFixture.GenerateClientValid();
 
             //Act
             var result = cliente.IsValid();
@@ -28,19 +30,12 @@ namespace Features.Tests._01_Traits
             Assert.Equal(expected: 0, actual: cliente.ValidationResult.Errors.Count);
         }
 
-        [Fact(DisplayName ="Client Test Invalid")]
-        [Trait("Category","Client Trait Tests")]
+        [Fact(DisplayName ="New Client Invalid")]
+        [Trait("Category","Client Trait Tests Invalid")]
         public void Client_NewClient_MustBeNotValid()
         {
             //Arrange
-            var cliente = new Client(
-                Guid.NewGuid(),
-                name: "",
-                surname: "",
-                birthday: DateTime.Now.AddYears(-37),
-                email: "natt@nso.com.br",
-                active: true,
-                registrationDate: DateTime.Now);
+            var cliente = _clientTestsFixture.GenerateClientInvalid();
 
             //Act
             var result = cliente.IsValid();
