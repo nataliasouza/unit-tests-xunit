@@ -51,7 +51,7 @@ namespace Demo.Tests
                 "Testes Unitários",
                 "Testes Integrados",
                 "Testes Automatizados",
-                "Microsservices",
+                "Microservices",
                 "AWS"
             };
     

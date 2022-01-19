@@ -61,7 +61,7 @@ namespace Demo
                     Skills.Add("GIT");
                     Skills.Add("Testes Unitários");
                     Skills.Add("Testes Integrados");
-                    Skills.Add("Microsservices");
+                    Skills.Add("Microservices");
                     break;
 
                 case ProfessionalLevel.Senior:                    
@@ -73,7 +73,7 @@ namespace Demo
                     Skills.Add("Testes Unitários");
                     Skills.Add("Testes Integrados");
                     Skills.Add("Testes Automatizados");
-                    Skills.Add("Microsservices");
+                    Skills.Add("Microservices");
                     Skills.Add("AWS");
                     break;
             }
